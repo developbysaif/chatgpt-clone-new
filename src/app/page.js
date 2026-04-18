@@ -13,6 +13,8 @@ export default function Home() {
   const [projects, setProjects] = useState([]);
   const [history, setHistory] = useState([]);
   const [currentChat, setCurrentChat] = useState({ id: Date.now(), title: "New Chat", messages: [] });
+  const [searchQuery, setSearchQuery] = useState("");
+
 
   useEffect(() => {
     fetchChats();
